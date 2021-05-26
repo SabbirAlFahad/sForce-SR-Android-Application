@@ -1,0 +1,44 @@
+private void buildNotificationChannel()
+    {
+        if(Build.VERSION.SDK_INT greater=Build.VERSION_CODES.O)
+        {
+            CharSequence name="sms notification";
+            String description="Contains all SMS notification";
+            NotificationChannel notificationChannel=new NotificationChannel(CHANNEL_ID,name, NotificationManager.IMPORTANCE_DEFAULT);
+            notificationChannel.setDescription(description);
+            NotificationManager notificationManager=(NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+            notificationManager.createNotificationChannel(notificationChannel);
+        }
+    }
+
+
+private void displayNotificationWithActionButton()
+    {
+        buildNotificationChannel();
+        Intent intent=new Intent(this,WelcomeActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK |Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        PendingIntent pendingIntent=PendingIntent.getActivity(this,0,intent,PendingIntent.FLAG_ONE_SHOT);
+
+
+        Intent demoIntent=new Intent(this,DemoActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK |Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        PendingIntent demoPendingIntent=PendingIntent.getActivity(this,0,demoIntent,PendingIntent.FLAG_ONE_SHOT);
+
+        Intent testIntent=new Intent(this,TestActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK |Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        PendingIntent testPendingIntent=PendingIntent.getActivity(this,0,testIntent,PendingIntent.FLAG_ONE_SHOT);
+
+
+        NotificationCompat.Builder nBuilder=new NotificationCompat.Builder(this,CHANNEL_ID);
+        nBuilder.setSmallIcon(R.drawable.ic_notifications_black_24dp);
+        nBuilder.setContentTitle("Notification Example");
+        nBuilder.setContentText("This is an example of simple notification");
+        nBuilder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        nBuilder.setContentIntent(pendingIntent);
+        nBuilder.addAction(R.drawable.ic_demo,"Demo",demoPendingIntent);
+        nBuilder.addAction(R.drawable.ic_test,"Test",testPendingIntent);
+        nBuilder.setAutoCancel(true);
+        NotificationManagerCompat notificationManagerCompat=NotificationManagerCompat.from(this);
+        notificationManagerCompat.notify(NOTIFICATION_ID,nBuilder.build());
+
+    }

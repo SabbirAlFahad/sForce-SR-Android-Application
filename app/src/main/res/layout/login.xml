@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="#fefecc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        android:gravity="center|bottom">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:orientation="vertical"
+        android:src="#3949AB"
+        android:background="@drawable/card_bg"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:elevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="75"
+                android:background="@drawable/login_icon"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="110dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"/>
+
+            <TextView
+                android:id="@+id/txt_login"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="25"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/autour_one"
+                android:text="Login"
+                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:paddingLeft="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:hintTextColor="@color/colorWhite"
+                app:counterEnabled="true"
+                android:gravity="center"
+                app:counterMaxLength="15"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:elevation="20dp">
+
+                <EditText
+                    android:id="@+id/logId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_log"
+                    android:layout_gravity="center"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/user_24dp"
+                    android:hint="  Username"
+                    android:textColor="@color/colorBG"
+                    android:textColorHint="#fefecc"
+                    android:drawablePadding="5dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:elevation="8dp"
+            android:paddingLeft="10dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:endIconMode="password_toggle"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                android:elevation="20dp"
+                app:helperTextEnabled="false"
+                app:helperText="Max 10 characters"
+                app:hintTextColor="@color/colorWhite"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:startIconDrawable="@drawable/password_24dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/logpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:inputType="textPassword"
+                    android:background="@drawable/button_log"
+                    android:drawablePadding="5dp"
+                    android:paddingLeft="5dp"
+                    android:hint="Password"
+                    android:textColor="@color/colorBG"
+                    android:textColorHint="#fefecc"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:paddingLeft="20dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/remember"
+                android:layout_width="0dp"
+                android:elevation="6dp"
+                android:buttonTint="@color/colorWhite"
+                android:layout_height="match_parent"
+                android:layout_weight="10" />
+
+            <TextView
+                android:id="@+id/txt_remember"
+                android:layout_width="0dp"
+                android:layout_weight="80"
+                android:text="Remember Me"
+                android:fontFamily="@font/aldrich"
+                android:gravity="center|start"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:background="@drawable/button_enabled"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:text="Login"
+                android:fontFamily="@font/autour_one"
+                android:elevation="10dp"
+                android:drawableRight="@drawable/key"
+                android:id="@+id/btnlogin"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginRight="80dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="80dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:gravity="center|bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/kaushan_script"
+            android:gravity="center|bottom"
+            android:text="Powered By ITBL"
+            android:textColor="@color/colorCard"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/itbl"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

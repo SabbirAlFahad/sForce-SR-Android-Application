@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="#fefecc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        android:elevation="6dp"
+        android:background="@drawable/row_bg"
+        android:gravity="center|bottom">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            android:background="@drawable/login_icon"
+            android:layout_marginLeft="140dp"
+            android:layout_marginRight="140dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/txt_myProfile"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/kaushan_script"
+            android:text="My Profile"
+            android:textColor="@color/colorBG"
+            android:layout_marginLeft="85dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:gravity="center|bottom">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:elevation="3dp"
+                android:background="@drawable/psettings_vec"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp" />
+
+            <TextView
+                android:id="@+id/txt_pInfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                android:text="See your profile information and settings by clicking settings"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="35dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:orientation="vertical"
+            android:elevation="20dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_pInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_enabled"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:text="Settings"
+                android:drawableStart="@drawable/set_icon"
+                android:fontFamily="@font/autour_one"
+                android:elevation="12dp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="5dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:gravity="center|bottom">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:elevation="3dp"
+                android:background="@drawable/stores"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp" />
+
+            <TextView
+                android:id="@+id/txt_pShList"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                android:text="See your allocated shops by clicking the shop list button"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="35dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:orientation="vertical"
+            android:elevation="20dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_pShopList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_enabled"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:text="Shop List"
+                android:drawableStart="@drawable/shoplist_vector"
+                android:fontFamily="@font/autour_one"
+                android:elevation="12dp"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="5dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="18"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/row_bg"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/kaushan_script"
+        android:gravity="center|bottom"
+        android:text="Powered By ITBL"
+        android:textColor="@color/colorCard"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:id="@+id/itbl"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>

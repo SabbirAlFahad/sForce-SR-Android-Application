@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefecc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:elevation="6dp"
+        android:background="@drawable/row_bg"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="@drawable/store_entry_vec"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"/>
+
+        <TextView
+            android:id="@+id/txt_shopEntry"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:gravity="center|start"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/kaushan_script"
+            android:text="Shop Entry"
+            android:textColor="@color/colorBG"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"/>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:orientation="vertical"
+        android:gravity="center|bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/row_bg"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|start"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="35"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="Contract Person 1"
+                    android:textColor="@color/colorBG"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/cPerson1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="65"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/user_24dp"
+                    android:hint="Ex. John Doe"
+                    android:background="@drawable/button_log"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorBG"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/row_bg"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|start"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="35"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Contract Person 2"
+                    android:textColor="@color/colorBG"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/cPerson2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="65"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/user_24dp"
+                    android:hint="Ex. Thomas Smith"
+                    android:background="@drawable/button_log"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorBG"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/row_bg"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|start"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="35"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Mobile 1"
+                    android:textColor="@color/colorBG"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/sMobile1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="65"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:drawableLeft="@drawable/phone_24dp"
+                    android:hint="Ex. 01700892571"
+                    android:background="@drawable/button_log"
+                    android:textColor="@color/colorBG"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/row_bg"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|start"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="35"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Mobile 2"
+                    android:textColor="@color/colorBG"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/sMobile2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="65"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/phone_24dp"
+                    android:hint="Ex. 01700892551"
+                    android:background="@drawable/button_log"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorBG"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/row_bg"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|start"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="35"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Address 1"
+                    android:textColor="@color/colorBG"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/sAddress1"
+                    android:drawableLeft="@drawable/loc_vector"
+                    android:hint="32 Topkhana Road, Paltan"
+                    android:background="@drawable/button_log"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="65"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorBG"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/row_bg"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|start"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="35"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Address 2"
+                    android:textColor="@color/colorBG"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/sAddress2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                android:layout_weight="65"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/loc_vector"
+                android:hint="32 Topkhana Road, Paltan"
+                android:background="@drawable/button_log"
+                android:padding="8dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorBG"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/spinner"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|start"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="35"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Select Division Code"
+                    android:textColor="@color/colorBG"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="65"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorBG"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:background="@drawable/spinner"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|start"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="35"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Select District Code"
+                    android:textColor="@color/colorBG"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="65"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:hint="Select DIV Code"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorBG"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/spinner"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|start"
+                android:layout_marginRight="15dp"
+                android:layout_weight="35"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Select Thana Code"
+                android:textColor="@color/colorBG"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="65"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:hint="Select DIV Code"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorBG"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/row_bg"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|start"
+                android:layout_marginRight="15dp"
+                android:layout_weight="35"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Web Address"
+                android:textColor="@color/colorBG"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/sWebAddress"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="65"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/web_24dp"
+                android:hint="Ex. www.itbangla.net"
+                android:background="@drawable/button_log"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorBG"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/row_bg"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|start"
+                android:layout_marginRight="15dp"
+                android:layout_weight="35"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Email"
+                android:textColor="@color/colorBG"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/sEmail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="65"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/email_black"
+                android:hint="Ex. someone@itbangla.net"
+                android:background="@drawable/button_log"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorBG"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/row_bg"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|start"
+                android:layout_marginRight="15dp"
+                android:layout_weight="35"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Trade LIC"
+                android:textColor="@color/colorBG"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/sTradeLIC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="65"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/web_24dp"
+                android:hint="Ex. 145682****"
+                android:background="@drawable/button_log"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorBG"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/row_bg"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|start"
+                android:layout_marginRight="15dp"
+                android:layout_weight="35"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="VAT Reg. No."
+                android:textColor="@color/colorBG"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/sVatNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="65"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/drive_24dp"
+                android:hint="Ex. 2578682****"
+                android:background="@drawable/button_log"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorBG"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/row_bg"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|start"
+                android:layout_marginRight="15dp"
+                android:layout_weight="35"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Created By"
+                android:textColor="@color/colorBG"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/sCreatedBy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="65"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/create24dp"
+                android:hint="Ex. Robert Hooke"
+                android:background="@drawable/button_log"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorBG"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/row_bg"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|start"
+                android:layout_marginRight="15dp"
+                android:layout_weight="35"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Created Date"
+                android:textColor="@color/colorBG"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sCreateDate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="65"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:drawableLeft="@drawable/date24dp"
+                android:hint="Enter Date"
+                android:background="@drawable/button_log"
+                android:padding="5dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorBG"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_shopEntrySave"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_enabled"
+                android:textColor="@color/colorWhite"
+                android:drawableRight="@drawable/next_vec"
+                android:textSize="12sp"
+                android:text="Save And Insert"
+                android:fontFamily="@font/autour_one"
+                android:elevation="6dp"
+                android:onClick="PostData"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@drawable/row_bg"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    </LinearLayout>
+
+</LinearLayout>

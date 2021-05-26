@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SForce</string>
+
+    <string-array name="demo_array">
+    <item>Select Division CODE</item>
+    <item>12485</item>
+    <item>25886</item>
+    <item>65412</item>
+    <item>25478</item>
+    <item>24568</item>
+    </string-array>
+
+    <string-array name="demo2_array">
+        <item>Select Thana CODE</item>
+        <item>12485</item>
+        <item>12485</item>
+        <item>25886</item>
+        <item>65412</item>
+        <item>25478</item>
+        <item>24568</item>
+    </string-array>
+
+</resources>
